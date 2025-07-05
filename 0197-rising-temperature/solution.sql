@@ -1,9 +1,6 @@
--- ANSI-SQL / PostgreSQL style
-SELECT curr.id
-FROM   Weather  AS curr
-WHERE  EXISTS (
-         SELECT 1
-         FROM   Weather AS prev
-         WHERE  prev.recordDate = curr.recordDate - INTERVAL '1 DAY'
-           AND  curr.temperature > prev.temperature
-       );
+# Write your MySQL query statement below
+SELECT today.id
+FROM Weather AS previous
+INNER JOIN Weather AS today
+ON today.recordDate = previous.recordDate + INTERVAL 1 Day
+WHERE today.temperature > previous.temperature;
