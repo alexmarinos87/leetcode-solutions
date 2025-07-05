@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/article-views-i">1258. Article Views I</a></h2><h3>Easy</h3><hr><p>Table: <code>Views</code></p>
+<p>Table: <code>Views</code></p>
 
 <pre>
 +---------------+---------+
