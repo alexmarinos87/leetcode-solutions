@@ -1,26 +1,7 @@
-WITH start_events AS (
-    SELECT
-        machine_id,
-        process_id,
-        timestamp AS start_ts
-    FROM Activity
-    WHERE activity_type = 'start'
-),                            
-end_events AS (
-    SELECT
-        machine_id,
-        process_id,
-        timestamp AS end_ts
-    FROM Activity
-    WHERE activity_type = 'end'
-)
-SELECT
-    s.machine_id,
-    ROUND(AVG(e.end_ts - s.start_ts)::numeric, 3) AS processing_time
-FROM start_events s
-JOIN end_events e
-  ON e.machine_id = s.machine_id
- AND e.process_id = s.process_id
-GROUP BY
-    s.machine_id;
-
+SELECT 
+    machine_id,
+    ROUND(SUM(CASE WHEN activity_type='start' THEN timestamp*-1 ELSE timestamp END)*1.0
+    / (SELECT COUNT(DISTINCT process_id)),3) AS processing_time
+FROM 
+    Activity
+GROUP BY machine_id
