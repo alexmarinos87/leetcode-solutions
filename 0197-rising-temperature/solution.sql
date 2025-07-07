@@ -1,6 +1,10 @@
-# Write your MySQL query statement below
-SELECT today.id
-FROM Weather AS previous
-INNER JOIN Weather AS today
-ON today.recordDate = previous.recordDate + INTERVAL 1 Day
-WHERE today.temperature > previous.temperature;
+SELECT
+    t.id
+FROM 
+    Weather AS t
+INNER JOIN
+    Weather AS p
+ON 
+    t.recordDate = p.recordDate + INTERVAL 1 DAY
+WHERE 
+    t.temperature > p.temperature;
