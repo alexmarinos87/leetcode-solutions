@@ -1,21 +1,19 @@
 SELECT
-    s.student_id,
-    s.student_name,
-    sub.subject_name,
-    COUNT(e.student_id) AS attended_exams
-FROM
-    Students AS s
-  CROSS JOIN
-    Subjects AS sub
-  LEFT JOIN
-    Examinations AS e
-      ON e.student_id   = s.student_id
-     AND e.subject_name = sub.subject_name
-GROUP BY
-    s.student_id,
-    s.student_name,
-    sub.subject_name
-ORDER BY
-    s.student_id,
-    sub.subject_name;
-
+    stud.student_id,
+    stud.student_name,
+    subj. subject_name,
+    COUNT(exam.student_id) AS attended_exams
+FROM 
+    Students AS stud
+CROSS JOIN 
+    Subjects AS subj
+LEFT JOIN 
+    Examinations AS exam
+ON 
+    stud.student_id = exam.student_id
+    AND
+    subj.subject_name = exam.subject_name
+GROUP BY 
+    stud.student_id, stud.student_name, subj.subject_name
+ORDER BY 
+    stud.student_id, stud.student_name, subj.subject_name;
