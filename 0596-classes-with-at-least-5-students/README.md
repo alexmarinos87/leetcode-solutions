@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/classes-with-at-least-5-students">596. Classes With at Least 5 Students</a></h2><h3>Easy</h3><hr><p>Table: <code>Courses</code></p>
+<p>Table: <code>Courses</code></p>
 
 <pre>
 +-------------+---------+
