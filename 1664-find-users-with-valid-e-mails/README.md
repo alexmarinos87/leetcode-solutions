@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-users-with-valid-e-mails">1664. Find Users With Valid E-Mails</a></h2><h3>Easy</h3><hr><p>Table: <code>Users</code></p>
+<p>Table: <code>Users</code></p>
 
 <pre>
 +---------------+---------+
