@@ -1,10 +1,12 @@
 SELECT
     p.product_name,
-    s.price,
-    s.year
+    s.year,
+    s.price
 FROM
-    Sales AS s 
+    Sales AS s
 LEFT JOIN
     Product AS p
 ON
-    s.product_id = p.product_id;
+    s.product_id = p.product_id
+ORDER BY
+    s.year DESC;
