@@ -1,0 +1,29 @@
+name: Sync LeetCode Solutions
+
+on:
+  schedule:
+    - cron: "0 8 * * 6"    # every Saturday at 08:00 UTC
+  workflow_dispatch:      # manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Sync LeetCode submissions
+        uses: joshcai/leetcode-sync@v1.7
+        with:
+          # built-in GitHub token (no need to store it yourself)
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Pull your LeetCode cookies straight from Secrets
++        leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          leetcode-session:    ${{ secrets.LEETCODE_SESSION }}
+
+          destination-folder: ""        # root of repo; or "solutions/"
+          filter-duplicate-secs: 86400  # skip dups within 24h
+          commit-header: "[LeetCode Sync]"
+          verbose: true
