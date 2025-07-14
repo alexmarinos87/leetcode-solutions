@@ -1,10 +1,9 @@
-SELECT
-    t.id
-FROM 
-    Weather AS t
-INNER JOIN
-    Weather AS p
-ON 
-    t.recordDate = p.recordDate + INTERVAL 1 DAY
-WHERE 
-    t.temperature > p.temperature;
+-- ANSI-SQL / PostgreSQL style
+SELECT curr.id
+FROM   Weather  AS curr
+WHERE  EXISTS (
+         SELECT 1
+         FROM   Weather AS prev
+         WHERE  prev.recordDate = curr.recordDate - INTERVAL '1 DAY'
+           AND  curr.temperature > prev.temperature
+       );
