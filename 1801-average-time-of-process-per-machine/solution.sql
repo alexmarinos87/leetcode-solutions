@@ -1,15 +1,26 @@
-WITH CTE AS(
+WITH start_events AS (
     SELECT
         machine_id,
         process_id,
-        MIN(CASE WHEN activity_type = 'start' THEN `timestamp` END) AS start_time,
-        MAX(CASE WHEN activity_type = 'end' THEN `timestamp` END) AS end_time
+        timestamp AS start_ts
     FROM Activity
-    GROUP BY machine_id, process_id
+    WHERE activity_type = 'start'
+),                            
+end_events AS (
+    SELECT
+        machine_id,
+        process_id,
+        timestamp AS end_ts
+    FROM Activity
+    WHERE activity_type = 'end'
 )
-SELECT 
-    machine_id,
-    ROUND(AVG(end_time - start_time),3) AS processing_time
-FROM
-    CTE
-GROUP BY machine_id;
+SELECT
+    s.machine_id,
+    ROUND(AVG(e.end_ts - s.start_ts)::numeric, 3) AS processing_time
+FROM start_events s
+JOIN end_events e
+  ON e.machine_id = s.machine_id
+ AND e.process_id = s.process_id
+GROUP BY
+    s.machine_id;
+
