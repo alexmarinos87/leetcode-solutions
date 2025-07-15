@@ -1,16 +1,20 @@
-name: Sync LeetCode Solutions
+permissions:
+  contents: write
 
+name: Sync LeetCode Solutions
 on:
-  workflow_dispatch:      # ← enables “Run workflow”
+  workflow_dispatch:
   schedule:
-    - cron: "0 8 * * 6"    # every Saturday at 08:00 UTC
+    - cron: "0 8 * * 6"
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          # ensure the checked-out token can push
+          persist-credentials: true
 
       - name: Sync LeetCode submissions
         uses: joshcai/leetcode-sync@v1.7
