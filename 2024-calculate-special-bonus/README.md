@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/calculate-special-bonus">2024. Calculate Special Bonus</a></h2><h3>Easy</h3><hr><p>Table: <code>Employees</code></p>
+<p>Table: <code>Employees</code></p>
 
 <pre>
 +-------------+---------+
