@@ -1,4 +1,4 @@
-<p>Table: <code>Users</code></p>
+<h2><a href="https://leetcode.com/problems/fix-names-in-a-table">1811. Fix Names in a Table</a></h2><h3>Easy</h3><hr><p>Table: <code>Users</code></p>
 
 <pre>
 +----------------+---------+
