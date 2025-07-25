@@ -7,6 +7,7 @@
 ## Database
 |  |
 | ------- |
+| [0176-second-highest-salary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0176-second-highest-salary) |
 | [0183-customers-who-never-order](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0183-customers-who-never-order) |
 | [0595-big-countries](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0595-big-countries) |
 | [1258-article-views-i](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1258-article-views-i) |
