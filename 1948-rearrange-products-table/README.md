@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/rearrange-products-table">1948. Rearrange Products Table</a></h2><h3>Easy</h3><hr><p>Table: <code>Products</code></p>
+<p>Table: <code>Products</code></p>
 
 <pre>
 +-------------+---------+
