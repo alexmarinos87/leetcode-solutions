@@ -13,6 +13,7 @@
 | [0184-department-highest-salary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0184-department-highest-salary) |
 | [0196-delete-duplicate-emails](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0196-delete-duplicate-emails) |
 | [0595-big-countries](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0595-big-countries) |
+| [0596-classes-with-at-least-5-students](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0596-classes-with-at-least-5-students) |
 | [1179-game-play-analysis-i](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1179-game-play-analysis-i) |
 | [1258-article-views-i](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1258-article-views-i) |
 | [1664-find-users-with-valid-e-mails](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1664-find-users-with-valid-e-mails) |
