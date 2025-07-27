@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/game-play-analysis-i">1179. Game Play Analysis I</a></h2><h3>Easy</h3><hr><p>Table: <code>Activity</code></p>
+<p>Table: <code>Activity</code></p>
 
 <pre>
 +--------------+---------+
