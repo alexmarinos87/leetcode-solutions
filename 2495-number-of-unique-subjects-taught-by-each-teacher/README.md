@@ -1,4 +1,4 @@
-<p>Table: <code>Teacher</code></p>
+<h2><a href="https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher">2495. Number of Unique Subjects Taught by Each Teacher</a></h2><h3>Easy</h3><hr><p>Table: <code>Teacher</code></p>
 
 <pre>
 +-------------+------+
