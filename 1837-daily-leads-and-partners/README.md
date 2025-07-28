@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/daily-leads-and-partners">1837. Daily Leads and Partners</a></h2><h3>Easy</h3><hr><p>Table: <code>DailySales</code></p>
+<p>Table: <code>DailySales</code></p>
 
 <pre>
 +-------------+---------+
