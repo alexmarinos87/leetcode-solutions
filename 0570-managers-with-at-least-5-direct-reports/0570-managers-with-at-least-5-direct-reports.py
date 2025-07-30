@@ -7,7 +7,7 @@ def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
     Employee table (i.e., whose id appears as an employee id) should
     be returned.
     """
-    # 1️⃣ Count direct reports per managerId
+    # 1️ Count direct reports per managerId
     direct_counts = (
         employee.dropna(subset=['managerId'])       # rows that have a manager
                 .groupby('managerId', as_index=False)
@@ -15,13 +15,13 @@ def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
                 .rename(columns={'size': 'reports'})
     )
 
-    # 2️⃣ Keep managerIds with ≥ 5 reports
+    # 2️ Keep managerIds with ≥ 5 reports
     qualified = direct_counts[direct_counts['reports'] >= 5]
 
     if qualified.empty:
         return pd.DataFrame(columns=['name'])
 
-    # 3️⃣ Join to employee table to get the manager’s name
+    # 3️ Join to employee table to get the manager’s name
     result = (
         qualified.merge(employee[['id', 'name']],
                         left_on='managerId',
