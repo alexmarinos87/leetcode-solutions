@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/sales-person">607. Sales Person</a></h2><h3>Easy</h3><hr><p>Table: <code>SalesPerson</code></p>
+<p>Table: <code>SalesPerson</code></p>
 
 <pre>
 +-----------------+---------+
