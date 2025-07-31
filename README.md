@@ -32,4 +32,16 @@
 | [1948-rearrange-products-table](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1948-rearrange-products-table) |
 | [2024-calculate-special-bonus](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2024-calculate-special-bonus) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
+## Array
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0088-merge-sorted-array) |
+## Two Pointers
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0088-merge-sorted-array) |
+## Sorting
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0088-merge-sorted-array) |
 <!---LeetCode Topics End-->
