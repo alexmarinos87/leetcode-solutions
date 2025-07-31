@@ -1,14 +1,13 @@
-import pandas as pd
-
 def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
-    # Build a Boolean mask:
-    #    • customers['id'] gives the customer IDs column.
-    #    • .isin(orders['customerId']) checks membership row-by-row.
-    #    • ~  negates the Series, so True means “id not present in Orders”.
-    mask = ~customers['id'].isin(orders['customerId'])
+    """
+    Return a DataFrame of customer names who never placed an order.
+    Output column must be named 'Customers'.
+    """
+    # Boolean mask: customers whose id does NOT appear in orders.customerId
+    no_orders = ~customers['id'].isin(orders['customerId'].values)
 
-    # Apply the mask (row filter) and rename the surviving column.
     return (
-        customers.loc[mask, ['name']]     # keep only rows flagged True
-                .rename(columns={'name': 'Customers'})  # match expected header
+        customers.loc[no_orders, ['name']]
+                 .rename(columns={'name': 'Customers'})
     )
+
