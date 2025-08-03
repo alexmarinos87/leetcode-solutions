@@ -1,10 +1,10 @@
 class Solution(object):
     def maxProfit(self, prices):
         """
-        Calculate the maximum profit by making as many transactions
-        as needed, buying and selling on every profitable opportunity.
+        Calculate the maximum profit by making unlimited transactions
+        (buy/sell) where you can buy and sell on the same day.
 
-        Greedy approach: sum up all price increases between consecutive days.
+        Greedy strategy: Add up every price increase between consecutive days.
 
         Parameters
         ----------
@@ -13,12 +13,12 @@ class Solution(object):
         Returns
         -------
         int
-            Maximum profit from unlimited transactions.
+            Maximum profit from all allowed transactions.
         """
         profit = 0
 
         for i in range(1, len(prices)):
-            if prices[i] > prices[i - 1]:               # If price increases
-                profit += prices[i] - prices[i - 1]     # Sell and take the profit
+            if prices[i] > prices[i - 1]:
+                profit += prices[i] - prices[i - 1]  # Buy at i-1, sell at i
 
         return profit
