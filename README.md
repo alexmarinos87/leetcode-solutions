@@ -88,6 +88,7 @@
 | [0013-roman-to-integer](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0169-majority-element](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0169-majority-element) |
+| [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 ## Divide and Conquer
 |  |
@@ -161,6 +162,7 @@
 | [0068-text-justification](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0068-text-justification) |
 | [0125-valid-palindrome](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0151-reverse-words-in-a-string) |
+| [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
 ## Trie
 |  |
