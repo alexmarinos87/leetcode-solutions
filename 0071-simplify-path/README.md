@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/simplify-path">71. Simplify Path</a></h2><h3>Medium</h3><hr><p>You are given an <em>absolute</em> path for a Unix-style file system, which always begins with a slash <code>&#39;/&#39;</code>. Your task is to transform this absolute path into its <strong>simplified canonical path</strong>.</p>
+<p>You are given an <em>absolute</em> path for a Unix-style file system, which always begins with a slash <code>&#39;/&#39;</code>. Your task is to transform this absolute path into its <strong>simplified canonical path</strong>.</p>
 
 <p>The <em>rules</em> of a Unix-style file system are as follows:</p>
 
