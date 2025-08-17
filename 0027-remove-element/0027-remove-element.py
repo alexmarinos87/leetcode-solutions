@@ -1,25 +1,18 @@
 class Solution(object):
     def removeElement(self, nums, val):
         """
-        In-place remove all occurrences of `val` from `nums`.
-        Return the new length k; the first k slots of `nums` will hold
-        the elements that are not equal to `val` (order can change).
-
-        Parameters
-        ----------
-        nums : List[int]
-        val  : int
-
-        Returns
-        -------
-        int
-            Number of elements different from `val` (k).
+        Order doesn't matter. Swap `val` with the last active slot.
+        Shrink the active length `n`. Re-check the swapped-in value.
+        Returns k = new active length.
+        Time O(n), Space O(1)
         """
-        write = 0                          # next index to keep
-
-        for read in range(len(nums)):      # scan every position once
-            if nums[read] != val:          # keep this element
-                nums[write] = nums[read]   # overwrite (or copy to itself)
-                write += 1                 # advance "good" slot
-
-        return write                       # k = count of kept elements
+        n = len(nums)
+        i = 0
+        while i < n:
+            if nums[i] == val:
+                nums[i] = nums[n - 1]  # move last active element forward
+                n -= 1                 # shrink active range
+                # do not i += 1 here; need to re-check nums[i]
+            else:
+                i += 1
+        return n
