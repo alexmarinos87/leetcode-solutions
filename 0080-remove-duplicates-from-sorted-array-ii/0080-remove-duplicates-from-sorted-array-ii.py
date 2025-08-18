@@ -17,3 +17,13 @@ class Solution(object):
                 nums[w] = nums[r]
                 w += 1
         return w
+
+        """
+        Second solution (this version is more elegant):
+        w = 0
+        for x in nums:
+            if w < 2 or x != numbs[w-2]:
+                nums[w] = x
+                w += 1
+        return w
+        """
