@@ -1,28 +1,27 @@
 class Solution(object):
-    def majorityElement(self, nums):
         """
-        Find the majority element that appears more than n // 2 times.
-
-        This uses the Boyer-Moore Voting Algorithm:
-        - Keep a running count of a candidate.
-        - If count drops to zero, switch to a new candidate.
-
-        Parameters
-        ----------
-        nums : List[int]
-
-        Returns
-        -------
-        int
-            The majority element in the list.
+        :type nums: List[int]
+        :rtype: int
         """
+        from collections import Counter
+        """
+        Time O(N), Space O(U)
+        I use Python's collections. Counter to count the frequency of each number in the array. Since the majority element is guaranteed to appear more than n//2 times, I can use most_common(1) to directly return the element with the highest count. This solution runs in O(n) time because it makes one pass through the list to build the counter. However, it uses O(u) space, where u is the number of unique elements in the list, so it does not satisfy the follow-up constraint of O(1) space.
+        """
+        def majorityElement(self, nums):
+            return Counter(nums).most_common(1)[0][0]
+        """
+        Alternative Method (satisfies both O(n) time and O(1) space)
         count = 0
         candidate = None
 
         for num in nums:
             if count == 0:
-                candidate = num  # reset to new candidate
+                candidate = num
             count += (1 if num == candidate else -1)
-
         return candidate
-
+        Explanation:
+        - Maints a running "candidate" for the majority element.
+        - Increments or decrements a count based on whether the current number matches the candidate.
+        - Guaranteed to return the correct result because the majority elements always exists.
+        """
