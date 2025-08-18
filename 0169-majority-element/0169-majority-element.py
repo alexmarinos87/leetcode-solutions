@@ -10,3 +10,18 @@ class Solution(object):
         """
         def majorityElement(self, nums):
             return Counter(nums).most_common(1)[0][0]
+        """
+        Alternative Method (satisfies both O(n) time and O(1) space)
+        count = 0
+        candidate = None
+
+        for num in nums:
+            if count == 0:
+                candidate = num
+            count += (1 if num == candidate else -1)
+        return candidate
+        Explanation:
+        - Maints a running "candidate" for the majority element.
+        - Increments or decrements a count based on whether the current number matches the candidate.
+        - Guaranteed to return the correct result because the majority elements always exists.
+        """
