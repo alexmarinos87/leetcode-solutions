@@ -1,31 +1,29 @@
 class Solution(object):
     def removeDuplicates(self, nums):
         """
-        In-place remove duplicates from sorted array `nums`, allowing
-        at most two occurrences of each unique element.
-        Return the new length `k`; the first `k` slots of `nums` will
-        contain the result in-place, preserving original order.
+        :type nums: List[int]
+        :rtype: int
 
-        Parameters
-        ----------
-        nums : List[int]
-
-        Returns
-        -------
-        int
-            Number of elements in the modified array with at most
-            two occurrences of each number.
+        Keep at most two of each value in a sorted array
+        Time O(n), Space O(1)
         """
-        if len(nums) <= 2:
-            return len(nums)  # Already satisfies the condition
+        n = len(nums)
+        if n <= 2:
+            return n
+            
+        w = 2 # next write position; first two are always allowed
+        for r in range(2, len(nums)):
+            if nums[r] != nums[w-2]:
+                nums[w] = nums[r]
+                w += 1
+        return w
 
-        write = 2                          # Start writing from index 2
-
-        for read in range(2, len(nums)):
-            # Compare with the element two positions before
-            if nums[read] != nums[write - 2]:
-                nums[write] = nums[read]  # Copy valid value
-                write += 1                # Move write pointer
-
-        return write                      # k = count of allowed elements
-
+        """
+        Second solution (this version is more elegant):
+        w = 0
+        for x in nums:
+            if w < 2 or x != numbs[w-2]:
+                nums[w] = x
+                w += 1
+        return w
+        """
