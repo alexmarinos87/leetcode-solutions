@@ -1,37 +1,25 @@
 class Solution(object):
     def maxArea(self, height):
         """
-        Compute the maximum water a container can store using two lines.
-
-        Approach:
-        - Two pointers: left at start, right at end.
-        - Area is limited by the shorter line: width * min(height[left], height[right]).
-        - Move the pointer at the shorter line inward to seek a taller boundary.
-        - Track the maximum area seen.
-
-        Parameters
-        ----------
-        height : List[int]
-            Non-negative integers representing line heights.
-
-        Returns
-        -------
-        int
-            The maximum area achievable.
+        :type height: List[int]
+        :rtype: int
+        Approach: Two pointers (start and end of the array); shrink the window from the side with the shorter height.
+        Why it fits: We want to maximise area = min(height[l], height[r]) * (r - l).
+        Invariants: l < r always; at each step, the current container is evaluated for area. We move the pointer pointing to the shorter height to potentially find a taller one.
+        Correctness: Every pair (1, r) is considered such that only pairs that can beat the current max are retained. The area is maximised without skipping any potential maximum.
+        Complexity: Time O(n), Space O(1), where n = number of lines (height array length).
         """
-        left, right = 0, len(height) - 1
-        best = 0
-
-        while left < right:
-            h = min(height[left], height[right])
-            width = right - left
-            best = max(best, h * width)
-
-            # Strategically move the shorter side inward
-            if height[left] < height[right]:
-                left += 1
+        l, r = 0, len(height) - 1 # initialise two pointers
+        best = 0 # initiliase max area tracker
+        while l < r: # iterate while within bounds
+            h = min(height[l], height[r]) # height of the container
+            best = max(best,h * (r - l)) # computation of width
+            if height[l] < height[r]: # move the pointer from the shorter side
+                l += 1 # try to find taller line on left
             else:
-                right -= 1
-
+                r -= 1 # try to find taller line on right
         return best
-
+        """
+        Explanation:
+        We compute the area using the shorter line and update the max area (best) if it's higher than previous. Then we move the pointer from the shorter side inward, looking for potentially better pairs.
+        """
