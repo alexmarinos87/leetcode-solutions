@@ -1,35 +1,31 @@
 class Solution(object):
     def canCompleteCircuit(self, gas, cost):
         """
-        Determine the starting gas station index from which you can travel
-        around the circuit once, or return -1 if it's not possible.
-
-        Strategy:
-        - If total gas < total cost, return -1 immediately.
-        - Otherwise, greedily find the starting index by tracking tank level.
-
-        Parameters
-        ----------
-        gas : List[int]
-        cost : List[int]
-
-        Returns
-        -------
-        int
-            Starting index of the valid station, or -1 if not possible.
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        Greedy reset on negative tank.
+        If total(gas) < total(cost) -> -1; else a unique start exists.
+        Time: O(n), Space: O(1)
         """
-        total_gas = 0      # total gas gain - total cost (for global feasibility)
-        tank = 0           # current gas in tank
-        start = 0          # candidate starting index
-
+        total = 0 # sum of all (gas[i] - cost[i])
+        tank = 0 # running tank since current start
+        start = 0 # candidate start index
+        
         for i in range(len(gas)):
             gain = gas[i] - cost[i]
-            total_gas += gain
+            total += gain
             tank += gain
-
-            # If tank goes negative, can't reach next station from `start`
             if tank < 0:
-                start = i + 1  # try next station as start
-                tank = 0       # reset tank for next start attempt
+                # Can't reach i+1 from current start, move start to i+1
+                start = i + 1
+                tank = 0
+        
+        return start if total >= 0 else  -1
 
-        return start if total_gas >= 0 else -1
+        """
+        Explanation:
+        - Scan diff[i] = gas[i] - cost[i].
+        - If your running sum (tank) ever dips below  0 at i, no index from the previous start up to i can be a valid start, because they all fail before (or at) i.
+        - Reset to i+1 and continue. If the global total is negative, you can't finish from anywhere. 
+        """
