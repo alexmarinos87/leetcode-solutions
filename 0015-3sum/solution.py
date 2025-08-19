@@ -1,54 +1,45 @@
 class Solution(object):
     def threeSum(self, nums):
         """
-        Find all unique triplets that sum to zero (3Sum).
+        :type nums: List[int]
+        :rtype: List[List[int]]
 
-        Approach
-        --------
-        - Sort the array to enable two-pointer scanning and easy duplicate handling.
-        - Fix an anchor at index `i`, then use two pointers `l` and `r` to find pairs
-          such that nums[i] + nums[l] + nums[r] == 0.
-        - Skip duplicate anchors, and after recording a valid triplet, advance `l` and `r`
-          past duplicates so each triplet appears only once.
-        - Early stop: if nums[i] > 0 (with the array sorted), no further triplets can sum to zero.
-
-        Parameters
-        ----------
-        nums : List[int]
-            Integers (may include negatives, zeros, and positives).
-
-        Returns
-        -------
-        List[List[int]]
-            All distinct triplets [a, b, c] with a + b + c == 0, in any order.
+        Approach: Sort the array, fix one number, and use two pointers to find the other two.
+        Why it fits: Sorting allows us to skip duplicates and use two-pointer traversal efficiently.
+        Invariants: For each i, l > i and r starts at the end. Skip duplicates for i, l, and r.
+        Correctness: Every unique triplet is considered exactly once due to sorting and deduplication.
+        Complexity: Time O(n^2), Space O(1) extra (excluding output), where n = len(nums).
         """
         nums.sort()
-        n = len(nums)
         res = []
+        n = len(nums)
 
-        for i in range(n - 2):
-            # Skip duplicate anchors
+        for i in range(n - 2):  # i fixes the first number; we need at least two more to form a triplet
             if i > 0 and nums[i] == nums[i - 1]:
-                continue
-            # Since array is sorted, if anchor > 0, no triplet can sum to 0
-            if nums[i] > 0:
-                break
+                continue  # skip duplicate values for the fixed number
 
-            l, r = i + 1, n - 1
+            l, r = i + 1, n - 1  # initialize two pointers
+
             while l < r:
-                s = nums[i] + nums[l] + nums[r]
-                if s < 0:
-                    l += 1
-                elif s > 0:
-                    r -= 1
-                else:
-                    res.append([nums[i], nums[l], nums[r]])
-                    # Move past duplicates for l and r
-                    l += 1
-                    r -= 1
-                    while l < r and nums[l] == nums[l - 1]:
+                s = nums[i] + nums[l] + nums[r]  # sum of the triplet
+
+                if s == 0:
+                    res.append([nums[i], nums[l], nums[r]])  # valid triplet found
+
+                    # skip duplicates for the left and right pointers
+                    while l < r and nums[l] == nums[l + 1]:
                         l += 1
-                    while l < r and nums[r] == nums[r + 1]:
+                    while l < r and nums[r] == nums[r - 1]:
                         r -= 1
+
+                    # move both pointers inward to continue searching
+                    l += 1
+                    r -= 1
+
+                elif s < 0:
+                    l += 1  # sum too small; move left pointer right to increase total
+                else:
+                    r -= 1  # sum too large; move right pointer left to decrease total
+
         return res
 
