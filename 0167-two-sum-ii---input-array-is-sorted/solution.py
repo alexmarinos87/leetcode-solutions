@@ -1,36 +1,21 @@
 class Solution(object):
     def twoSum(self, numbers, target):
         """
-        Find two numbers in a sorted array that sum to the target.
-
-        Approach:
-        - Use two pointers: one starting at the leftmost element, one at the rightmost.
-        - Calculate the sum of the elements at the two pointers.
-        - If the sum matches the target, return their indices (1-based).
-        - If the sum is less than the target, move the left pointer rightwards to increase the sum.
-        - If the sum is greater than the target, move the right pointer leftwards to decrease the sum.
-        - This method ensures O(n) time complexity with O(1) extra space.
-
-        Parameters
-        ----------
-        numbers : List[int]
-            A sorted (non-decreasing) list of integers.
-        target : int
-            The sum to be achieved.
-
-        Returns
-        -------
-        List[int]
-            A list containing the 1-based indices [index1, index2] of the two numbers.
+        :type numbers: List[int]
+        :type target: int
+        :rtype: List[int]
+        Approach: Two pointer (left + right).
+        Why it fits: The array is sorted, allowing efficient narrowing by sum comparison.
+        Invariants: l < r; the correct pair (if it exists) must lie between these.
+        Correctness: At each step, we maintain that target must lie between number[l] + ... + numbers[r]. Moving inward eliminates impossible ranges without missing the correct pair.
+        Complexity: Time O(n), Space O(1)
         """
-        left, right = 0, len(numbers) - 1
-
-        while left < right:
-            current_sum = numbers[left] + numbers[right]
-            if current_sum == target:
-                return [left + 1, right + 1]  # convert to 1-based index
-            elif current_sum < target:
-                left += 1
+        l, r = 0, len(numbers) - 1
+        while l < r:
+            s = numbers[l] + numbers[r]
+            if s == target: 
+                return [l + 1, r + 1] # 1-based index
+            elif s < target:
+                l += 1
             else:
-                right -= 1
-
+                r -= 1
