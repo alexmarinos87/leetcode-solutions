@@ -16,10 +16,10 @@ class RandomizedSet(object):
         Returns True if inserted, False if it already exists.
         Time: O(1) average
         """
-        if val in self.indices:
+        if val in self.indices: # already present? Do not want duplicates so we return False
             return False
         self.indices[val] = len(self.nums)  # index where it'll be appended
-        self.nums.append(val)
+        self.nums.append(val) # put val at the index
         return True
 
     def remove(self, val):
