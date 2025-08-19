@@ -4,47 +4,49 @@ class RandomizedSet(object):
 
     def __init__(self):
         """
-        Initialize the data structure.
-        - self.nums: list to store values
-        - self.pos: dict to store value -> index mapping
+        Use a list for values and a hash map to track indices.
+        Time: O(1) avg per operation
         """
-        self.nums = []
-        self.pos = {}
+        self.indices = {}  # value -> index in self.nums
+        self.nums = []     # list of current values
 
     def insert(self, val):
         """
-        Insert val if not present. Return True if inserted, False if already exists.
+        Add val if not present.
+        Returns True if inserted, False if it already exists.
+        Time: O(1) average
         """
-        if val in self.pos:
+        if val in self.indices: # already present? Do not want duplicates so we return False
             return False
-        self.pos[val] = len(self.nums)
-        self.nums.append(val)
+        self.indices[val] = len(self.nums)  # index where it'll be appended
+        self.nums.append(val) # put val at the index
         return True
 
     def remove(self, val):
         """
-        Remove val if present. Return True if removed, False if not found.
+        Remove val if present.
+        Returns True if removed, False if it didn't exist.
+        Time: O(1) average
         """
-        if val not in self.pos:
+        if val not in self.indices:
             return False
-        
-        # Get index of the element to remove
-        idx = self.pos[val]
-        last_element = self.nums[-1]
 
-        # Swap the last element into the position of the element to remove
-        self.nums[idx] = last_element
-        self.pos[last_element] = idx
+        idx = self.indices[val]     # where val sits in the list
+        last = self.nums[-1]        # last element in the list
 
-        # Remove the last element
+        # Move the last element to fill the gap at idx
+        self.nums[idx] = last
+        self.indices[last] = idx
+
+        # Remove the last slot
         self.nums.pop()
-        del self.pos[val]
-
+        del self.indices[val]
         return True
 
     def getRandom(self):
         """
-        Return a random element from the set.
+        Return a random element.
+        Time: O(1)
         """
         return random.choice(self.nums)
 
