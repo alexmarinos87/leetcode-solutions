@@ -1,26 +1,19 @@
 class Solution(object):
     def strStr(self, haystack, needle):
         """
-        Locate the index of the first occurrence of 'needle' within 'haystack'.
-
-        Approach:
-        - If 'needle' is empty, return 0 immediately—by definition.
-        - Utilise Python’s built-in string search capability for optimal clarity and efficiency.
-        - If not found, return -1.
-
-        Parameters
-        ----------
-        haystack : str
-            The main string in which to search.
-        needle : str
-            The substring to locate.
-
-        Returns
-        -------
-        int
-            The index of the first occurrence of 'needle' in 'haystack', or -1 if absent.
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        Approach: Naive window comapre. Slide a window of length m and compare.
+        Correctness: If haystack[i:i+m] == needle, i is the first index by iteration order.
+        Complexity: Time O(n*m) (slicing/compare), Space O(1) extra.
         """
         if needle == "":
             return 0
-        return haystack.find(needle)
-
+        n, m = len(haystack), len(needle)
+        if m > n:
+            return -1
+        for i in range(n - m + 1):
+            if haystack[i:i+m] == needle:
+                return i
+        return -1
