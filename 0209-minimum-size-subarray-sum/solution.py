@@ -1,39 +1,24 @@
 class Solution(object):
     def minSubArrayLen(self, target, nums):
         """
-        Minimum Size Subarray Sum (LeetCode 209)
-
-        Approach
-        --------
-        Sliding Window (O(n)):
-        - Maintain a moving window [left, right] and its sum.
-        - Expand right to increase the sum until it reaches/exceeds target.
-        - Then shrink left as much as possible while keeping sum >= target,
-          updating the best (shortest) length along the way.
-        - Works because all numbers are positive, so expanding increases sum
-          and contracting decreases sum monotonically.
-
-        Parameters
-        ----------
-        target : int
-            Positive target sum to reach or exceed.
-        nums : List[int]
-            Array of positive integers.
-
-        Returns
-        -------
-        int
-            The minimal length of a subarray with sum >= target; 0 if none exists.
+        :type target: int
+        :type nums: List[int]
+        :rtype: int
+        Approach: Expand right to grow sum; while sum >= target, shrink left and record best length.
+        Why it fits: Positives make the window sum monotone-expanding increases, shrinking decreases.
+        Invariants: left <= right; total = sum(nums[left:right + 1]); best is minimal length seen so far.
+        Correctness: Every valid window is examined and shrunk to minimal size before moving on.
+        Complexity: Time O(n), Space O(1)
         """
         left = 0
-        window_sum = 0
+        total = 0 
         best = float('inf')
-
+        
         for right, x in enumerate(nums):
-            window_sum += x
-            while window_sum >= target:
-                best = min(best, right - left + 1)
-                window_sum -= nums[left]
+            total += x
+            while total >=  target:
+                best = min(best, right -left + 1)
+                total -= nums[left]
                 left += 1
 
         return 0 if best == float('inf') else best
