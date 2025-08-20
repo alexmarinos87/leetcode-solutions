@@ -1,44 +1,25 @@
 class Solution(object):
     def isHappy(self, n):
         """
-        Happy Number (LeetCode 202)
+        Approach: Repeatedly replace n with sum of squares of digits.
+                  Use Floyd's cycle detection: slow=f(n), fast=f(f(n)).
+                  If we ever reach 1, it's happy; if slow==fast (≠1), there's a loop.
 
-        Approach
-        --------
-        Floyd's cycle detection (O(log n) per transform, O(1) extra space):
-        - Define f(x) = sum of squares of digits of x.
-        - A number is happy iff repeated application of f enters the cycle at 1.
-        - Use two iterates: slow = f(slow), fast = f(f(fast)).
-        - If they meet at 1 → happy; if they meet elsewhere → loop → not happy.
-
-        Parameters
-        ----------
-        n : int
-            Positive integer to test.
-
-        Returns
-        -------
-        bool
-            True if n is a happy number; False otherwise.
+        Complexity: Each step costs O(#digits) ≈ O(log n).
+                    The sequence quickly falls below 1000, so steps are small in practice.
         """
-        def sqsum(x):
+        def sumsq(x):
             s = 0
             while x:
                 x, d = divmod(x, 10)
                 s += d * d
             return s
 
-        slow = n
-        fast = sqsum(n)
-        while fast != 1 and slow != fast:
-            slow = sqsum(slow)
-            fast = sqsum(sqsum(fast))
-
-        return fast == 1
-
-        # --- Alternative (simpler, uses O(k) space) ---
-        # seen = set()
-        # while n != 1 and n not in seen:
-        #     seen.add(n)
-        #     n = sqsum(n)
-        # return n == 1
+        slow = sumsq(n)
+        fast = sumsq(sumsq(n))
+        while slow != fast:
+            if fast == 1 or sumsq(fast) == 1:  # hare is two steps ahead; quick exit if it hits 1
+                return True
+            slow = sumsq(slow)
+            fast = sumsq(sumsq(fast))
+        return slow == 1
