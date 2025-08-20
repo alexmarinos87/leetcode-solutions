@@ -1,36 +1,20 @@
 class Solution(object):
     def simplifyPath(self, path):
         """
-        Simplify Path (LeetCode 71)
+        Approach: Split by '/' to get components. Skip '' and '.'.
+                  For '..' pop one dir if possible; otherwise ignore.
+                  Push any other name. Join with a single leading '/'.
 
-        Approach
-        --------
-        Stack-based normalization (O(n)):
-        - Split by '/'.
-        - Skip '' and '.'.
-        - On '..', pop if stack not empty.
-        - Otherwise, push the directory name (including sequences like '...' which are valid names).
-        - Join with '/' and prefix with '/'.
-
-        Parameters
-        ----------
-        path : str
-            Absolute Unix-style path.
-
-        Returns
-        -------
-        str
-            Canonical simplified path.
+        Complexity: O(n) time and O(n) space in worst case (n = len(path)).
         """
-        parts = path.split('/')
         stack = []
-        for p in parts:
-            if p == '' or p == '.':
+        for part in path.split('/'):
+            if part == '' or part == '.':
                 continue
-            if p == '..':
+            if part == '..':
                 if stack:
                     stack.pop()
             else:
-                stack.append(p)
+                stack.append(part)
         return '/' + '/'.join(stack)
 
