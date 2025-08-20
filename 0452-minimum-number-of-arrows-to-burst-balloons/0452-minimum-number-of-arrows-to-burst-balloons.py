@@ -1,37 +1,20 @@
 class Solution(object):
     def findMinArrowShots(self, points):
         """
-        Minimum Number of Arrows to Burst Balloons (LeetCode 452)
+        Approach: Sort intervals by xend. Shoot one arrow at the end of the first interval.
+                  For each next interval [s,e], if s <= shoot_pos, it's already burst;
+                  otherwise we need a new arrow at e.
 
-        Approach
-        --------
-        Greedy by earliest end (O(n log n)):
-        - Sort intervals by xend ascending.
-        - Shoot one arrow at the end of the first interval.
-        - For each next interval [s, e], if s > current_arrow_x, it can't be
-          burst by the current arrow → shoot a new arrow at e and update current.
-          Otherwise, it's already covered.
-
-        Parameters
-        ----------
-        points : List[List[int]]
-            Each element is [xstart, xend], xstart < xend.
-
-        Returns
-        -------
-        int
-            Minimum number of vertical arrows needed to burst all balloons.
+        Complexity: O(n log n) time for sorting, O(1) extra space (output excluded).
         """
         if not points:
             return 0
-
-        points.sort(key=lambda p: p[1])  # sort by end
-        arrows = 0
-        curr_end = None
-
-        for s, e in points:
-            if curr_end is None or s > curr_end:
-                arrows += 1
-                curr_end = e  # place arrow at the current interval's end
-
+        points.sort(key=lambda p: p[1])
+        arrows = 1
+        shoot = points[0][1]
+        for s, e in points[1:]:
+            if s <= shoot:     # overlaps (inclusive) → same arrow works
+                continue
+            arrows += 1
+            shoot = e          # place new arrow at this interval's end
         return arrows
