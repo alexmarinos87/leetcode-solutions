@@ -1,26 +1,8 @@
 class Solution(object):
     def isIsomorphic(self, s, t):
         """
-        Isomorphic Strings (LeetCode 205)
-
-        Approach
-        --------
-        Enforce a bijection using two hash maps (O(n)):
-        - Map chars from s -> t and t -> s simultaneously.
-        - On each pair (a, b), if an existing mapping conflicts, return False.
-        - If we finish without conflicts, the mapping is one-to-one and onto.
-
-        Parameters
-        ----------
-        s : str
-            Source string.
-        t : str
-            Target string of the same length.
-
-        Returns
-        -------
-        bool
-            True if s and t are isomorphic; False otherwise.
+        Approach: Maintain two maps s->t and t->s to enforce a bijection.
+        Complexity: O(n) time, O(min(n, Σ)) space (Σ ≤ 256 for ASCII).
         """
         if len(s) != len(t):
             return False
@@ -32,13 +14,4 @@ class Solution(object):
             st[a] = b
             ts[b] = a
         return True
-
-        # --- Alternative (pattern encoding) ---
-        # def pattern(x):
-        #     seen, out = {}, []
-        #     for i, ch in enumerate(x):
-#             seen.setdefault(ch, len(seen))
-        #         out.append(seen[ch])
-        #     return tuple(out)
-        # return pattern(s) == pattern(t)
 
