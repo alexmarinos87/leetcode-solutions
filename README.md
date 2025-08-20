@@ -105,6 +105,7 @@
 | [0030-substring-with-concatenation-of-all-words](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0049-group-anagrams](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0076-minimum-window-substring) |
+| [0127-word-ladder](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0202-happy-number) |
@@ -200,6 +201,7 @@
 | [0071-simplify-path](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0125-valid-palindrome) |
+| [0127-word-ladder](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0127-word-ladder) |
 | [0151-reverse-words-in-a-string](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0205-isomorphic-strings) |
 | [0224-basic-calculator](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0224-basic-calculator) |
@@ -257,4 +259,8 @@
 |  |
 | ------- |
 | [0224-basic-calculator](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0224-basic-calculator) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0127-word-ladder](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0127-word-ladder) |
 <!---LeetCode Topics End-->
