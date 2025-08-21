@@ -67,6 +67,7 @@
 | [0228-summary-ranges](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0228-summary-ranges) |
 | [0238-product-of-array-except-self](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0238-product-of-array-except-self) |
 | [0274-h-index](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0274-h-index) |
+| [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
@@ -151,6 +152,7 @@
 | [0055-jump-game](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
 ## Greedy
 |  |
@@ -238,6 +240,7 @@
 | [0069-sqrtx](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0209-minimum-size-subarray-sum) |
+| [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 ## Sliding Window
 |  |
 | ------- |
