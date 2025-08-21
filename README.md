@@ -55,6 +55,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0135-candy) |
+| [0136-single-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0169-majority-element) |
@@ -270,4 +271,5 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
+| [0136-single-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
