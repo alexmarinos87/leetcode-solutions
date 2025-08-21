@@ -129,6 +129,7 @@
 | ------- |
 | [0012-integer-to-roman](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0013-roman-to-integer) |
+| [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0202-happy-number) |
@@ -197,6 +198,7 @@
 | [0030-substring-with-concatenation-of-all-words](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0049-group-anagrams](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0058-length-of-last-word) |
+| [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0076-minimum-window-substring) |
@@ -220,6 +222,7 @@
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0068-text-justification) |
 ## Binary Search
 |  |
@@ -263,4 +266,8 @@
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0127-word-ladder) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
 <!---LeetCode Topics End-->
