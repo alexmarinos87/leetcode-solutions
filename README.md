@@ -47,6 +47,7 @@
 | [0055-jump-game](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0057-insert-interval) |
+| [0066-plus-one](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0066-plus-one) |
 | [0068-text-justification](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0068-text-justification) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0088-merge-sorted-array) |
@@ -132,6 +133,7 @@
 | [0009-palindrome-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0013-roman-to-integer) |
+| [0066-plus-one](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0189-rotate-array) |
