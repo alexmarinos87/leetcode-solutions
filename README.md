@@ -135,6 +135,7 @@
 | [0013-roman-to-integer](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0066-plus-one](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0067-add-binary) |
+| [0069-sqrtx](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0172-factorial-trailing-zeroes](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0172-factorial-trailing-zeroes) |
 | [0189-rotate-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0189-rotate-array) |
@@ -233,6 +234,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0069-sqrtx) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 ## Sliding Window
