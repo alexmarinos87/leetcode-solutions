@@ -133,6 +133,7 @@
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0013-roman-to-integer) |
@@ -275,6 +276,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0050-powx-n](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0050-powx-n) |
 | [0224-basic-calculator](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0224-basic-calculator) |
 ## Breadth-First Search
@@ -291,5 +293,6 @@
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0002-add-two-numbers) |
 | [0141-linked-list-cycle](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
