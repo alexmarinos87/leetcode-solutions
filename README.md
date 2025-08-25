@@ -277,6 +277,7 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0021-merge-two-sorted-lists](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0050-powx-n](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0050-powx-n) |
 | [0224-basic-calculator](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0224-basic-calculator) |
 ## Breadth-First Search
@@ -294,5 +295,6 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0021-merge-two-sorted-lists](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
