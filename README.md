@@ -27,6 +27,7 @@
 | [1625-group-sold-products-by-the-date](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1625-group-sold-products-by-the-date) |
 | [1664-find-users-with-valid-e-mails](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1664-find-users-with-valid-e-mails) |
 | [1670-patients-with-a-condition](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1670-patients-with-a-condition) |
+| [1724-customer-who-visited-but-did-not-make-any-transactions](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1724-customer-who-visited-but-did-not-make-any-transactions) |
 | [1811-fix-names-in-a-table](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1811-fix-names-in-a-table) |
 | [1827-invalid-tweets](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1827-invalid-tweets) |
 | [1837-daily-leads-and-partners](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1837-daily-leads-and-partners) |
