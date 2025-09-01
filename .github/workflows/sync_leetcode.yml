@@ -7,14 +7,18 @@ on:
   schedule:
     - cron: "0 8 * * 6"
 
+concurrency:
+  group: leetcode-sync
+  cancel-in-progress: true   # prevents multiple jobs from colliding
+
 jobs:
   sync:
+    if: github.actor != 'github-actions[bot]'  # stops the job from retriggering itself
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          # ensure the checked-out token can push
-          persist-credentials: true
+          persist-credentials: true   # keep token so push works
 
       - name: Sync LeetCode submissions
         uses: joshcai/leetcode-sync@v1.7
