@@ -1,26 +1,26 @@
-WITH start_events AS (
-    SELECT
-        machine_id,
+# Write your MySQL query statement below
+WITH start AS(
+    SELECT machine_id,
+    process_id,
+    activity_type,
+    timestamp AS start
+FROM Activity
+WHERE activity_type = "start"
+GROUP BY machine_id, process_id),
+end AS(
+    SELECT machine_id,
         process_id,
-        timestamp AS start_ts
+        activity_type,
+        timestamp AS end
     FROM Activity
-    WHERE activity_type = 'start'
-),                            
-end_events AS (
-    SELECT
-        machine_id,
-        process_id,
-        timestamp AS end_ts
-    FROM Activity
-    WHERE activity_type = 'end'
+    WHERE activity_type ="end"
+GROUP BY machine_id, process_id
 )
 SELECT
-    s.machine_id,
-    ROUND(AVG(e.end_ts - s.start_ts)::numeric, 3) AS processing_time
-FROM start_events s
-JOIN end_events e
-  ON e.machine_id = s.machine_id
- AND e.process_id = s.process_id
-GROUP BY
-    s.machine_id;
-
+    start.machine_id,
+    ROUND(AVG(end.end - start.start ),3) AS processing_time
+FROM start
+JOIN end
+ON start.machine_id = end.machine_id AND
+    start.process_id = end.process_id
+GROUP BY machine_id;
