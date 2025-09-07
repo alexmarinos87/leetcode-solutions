@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/not-boring-movies">620. Not Boring Movies</a></h2><h3>Easy</h3><hr><p>Table: <code>Cinema</code></p>
+<p>Table: <code>Cinema</code></p>
 
 <pre>
 +----------------+----------+
