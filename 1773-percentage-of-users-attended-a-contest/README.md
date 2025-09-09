@@ -1,4 +1,4 @@
-<p>Table: <code>Users</code></p>
+<h2><a href="https://leetcode.com/problems/percentage-of-users-attended-a-contest">1773. Percentage of Users Attended a Contest</a></h2><h3>Easy</h3><hr><p>Table: <code>Users</code></p>
 
 <pre>
 +-------------+---------+
