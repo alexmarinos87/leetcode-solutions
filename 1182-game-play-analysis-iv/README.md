@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/game-play-analysis-iv">1182. Game Play Analysis IV</a></h2><h3>Medium</h3><hr><p>Table: <code>Activity</code></p>
+<p>Table: <code>Activity</code></p>
 
 <pre>
 +--------------+---------+
