@@ -133,6 +133,7 @@
 | [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -142,6 +143,7 @@
 | ------- |
 | [0169-majority-element](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Math
 |  |
 | ------- |
@@ -236,6 +238,7 @@
 | [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
+| [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Trie
 |  |
 | ------- |
