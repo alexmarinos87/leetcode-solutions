@@ -82,6 +82,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
+| [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 ## Two Pointers
 |  |
@@ -133,6 +134,7 @@
 | [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
+| [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Divide and Conquer
 |  |
@@ -238,6 +240,7 @@
 | [0290-word-pattern](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
+| [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Trie
 |  |
