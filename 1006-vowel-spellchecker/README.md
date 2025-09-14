@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/vowel-spellchecker">1006. Vowel Spellchecker</a></h2><h3>Medium</h3><hr><p>Given a <code>wordlist</code>, we want to implement a spellchecker that converts a query word into a correct word.</p>
+<p>Given a <code>wordlist</code>, we want to implement a spellchecker that converts a query word into a correct word.</p>
 
 <p>For a given <code>query</code> word, the spell checker handles two categories of spelling mistakes:</p>
 
@@ -24,7 +24,7 @@
 
 <ul>
 	<li>When the query exactly matches a word in the wordlist (<strong>case-sensitive</strong>), you should return the same word back.</li>
-	<li>When the query matches a word up to capitlization, you should return the first such match in the wordlist.</li>
+	<li>When the query matches a word up to capitalization, you should return the first such match in the wordlist.</li>
 	<li>When the query matches a word up to vowel errors, you should return the first such match in the wordlist.</li>
 	<li>If the query has no matches in the wordlist, you should return the empty string.</li>
 </ul>
