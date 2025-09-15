@@ -135,6 +135,7 @@
 | [0380-insert-delete-getrandom-o1](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
 | [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Divide and Conquer
 |  |
@@ -241,6 +242,7 @@
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
 | [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Trie
 |  |
