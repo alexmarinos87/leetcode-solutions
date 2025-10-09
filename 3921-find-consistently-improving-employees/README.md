@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-consistently-improving-employees">3921. Find Consistently Improving Employees</a></h2><h3>Medium</h3><hr><p>Table: <code>employees</code></p>
+<p>Table: <code>employees</code></p>
 
 <pre>
 +-------------+---------+
