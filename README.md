@@ -45,6 +45,7 @@
 | [2024-calculate-special-bonus](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2024-calculate-special-bonus) |
 | [2087-confirmation-rate](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2087-confirmation-rate) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
+| [3921-find-consistently-improving-employees](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3921-find-consistently-improving-employees) |
 ## Array
 |  |
 | ------- |
