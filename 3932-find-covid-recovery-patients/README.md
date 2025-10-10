@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-covid-recovery-patients/">3932. Find COVID Recovery Patients</a></h2><h3>Medium</h3><hr><p>Table: <code>patients</code></p>
+<p>Table: <code>patients</code></p>
 
 <pre>
 +-------------+---------+
