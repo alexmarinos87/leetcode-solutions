@@ -47,6 +47,7 @@
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/alexmarinos87/leetcode-solutions/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
 | [3921-find-consistently-improving-employees](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3921-find-consistently-improving-employees) |
 | [3932-find-covid-recovery-patients](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3932-find-covid-recovery-patients) |
+| [3942-find-drivers-with-improved-fuel-efficiency](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3942-find-drivers-with-improved-fuel-efficiency) |
 ## Array
 |  |
 | ------- |
