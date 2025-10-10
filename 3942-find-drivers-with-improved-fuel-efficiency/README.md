@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-drivers-with-improved-fuel-efficiency">3942. Find Drivers with Improved Fuel Efficiency</a></h2><h3>Medium</h3><hr><p>Table: <code>drivers</code></p>
+<p>Table: <code>drivers</code></p>
 
 <pre>
 +-------------+---------+
