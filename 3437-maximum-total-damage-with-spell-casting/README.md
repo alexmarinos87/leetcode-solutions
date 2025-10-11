@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-total-damage-with-spell-casting">3437. Maximum Total Damage With Spell Casting</a></h2><h3>Medium</h3><hr><p>A magician has various spells.</p>
+<p>A magician has various spells.</p>
 
 <p>You are given an array <code>power</code>, where each element represents the damage of a spell. Multiple spells can have the same damage value.</p>
 
