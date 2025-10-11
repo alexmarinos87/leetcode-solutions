@@ -88,6 +88,7 @@
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Two Pointers
 |  |
 | ------- |
@@ -106,6 +107,7 @@
 | [0189-rotate-array](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0202-happy-number) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Sorting
 |  |
 | ------- |
@@ -117,6 +119,7 @@
 | [0242-valid-anagram](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0242-valid-anagram) |
 | [0274-h-index](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0274-h-index) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Hash Table
 |  |
 | ------- |
@@ -140,6 +143,7 @@
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
 | [1006-vowel-spellchecker](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1006-vowel-spellchecker) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/alexmarinos87/leetcode-solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Divide and Conquer
 |  |
@@ -150,6 +154,7 @@
 | ------- |
 | [0169-majority-element](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0383-ransom-note) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Math
 |  |
@@ -178,6 +183,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0392-is-subsequence) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Greedy
 |  |
 | ------- |
@@ -268,6 +274,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0300-longest-increasing-subsequence](https://github.com/alexmarinos87/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
+| [3437-maximum-total-damage-with-spell-casting](https://github.com/alexmarinos87/leetcode-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 ## Sliding Window
 |  |
 | ------- |
